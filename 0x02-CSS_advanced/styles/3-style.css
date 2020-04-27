@@ -1,6 +1,7 @@
-/* 0x02. Advanced CSS */
 html {
     scroll-behavior: smooth;
+}
+:root {
     --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
