@@ -22,6 +22,7 @@ html {
     --line-height-base: 1.5;
     --line-height-big: 1.8;
     --section-header-align: center;
+}
 body {
     color: var(--text-color);
     font-family: var(--font-family-base);
