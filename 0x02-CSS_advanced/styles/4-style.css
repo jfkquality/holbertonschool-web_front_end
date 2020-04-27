@@ -24,7 +24,7 @@ a {
 .card-category {
     color: var(--color-primary);
 }
-.section {
+section.section {
     font-family: var(--font-family-title);
 }
 .section-tagline {
