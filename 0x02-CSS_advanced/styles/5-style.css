@@ -22,6 +22,10 @@ body {
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
 }
+.section {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+}
 a {
     color: var(--text-color);
 }
@@ -30,9 +34,6 @@ a {
 }
 .card-category {
     color: var(--color-primary);
-}
-section.section {
-    font-family: var(--font-family-title);
 }
 .section-tagline {
     color: var(--color-primary);
