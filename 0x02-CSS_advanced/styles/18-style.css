@@ -394,9 +394,9 @@ html {
   --nav-item-font-family: font-family-title;
   --nav-item-font-weight: font-weight-bold;
   --nav-item-font-size:font-size-medium;
-  --nav-item-letter-spacing: 4%;  /* of the root/parent element */
+  --nav-item-letter-spacing: 0.4rem;  /* of the root/parent element */
   --nav-item-display: inline-block;
-  --nav-item-margin: 0 0 300% 0;
+  --nav-item-margin: 0 0 3rem 0;
   --nav-item-link-hover: color-primar;
 }
 body {
