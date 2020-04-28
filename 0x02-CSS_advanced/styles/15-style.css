@@ -348,15 +348,13 @@
     display: none;
   }
 
-
 /**
  * Custom universal rules
  */
- :root {
+ * {
     box-sizing: border-box;
  }
  
-
  /**
   * Start customized CSS 
  */
