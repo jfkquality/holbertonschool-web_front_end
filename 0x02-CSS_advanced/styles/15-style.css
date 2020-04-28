@@ -352,13 +352,15 @@
 /**
  * Custom universal rules
  */
+ :root {
+    box-sizing: border-box;
+ }
  
 
  /**
   * Start customized CSS 
  */
 html {
-    box-sizing: border-box;
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
