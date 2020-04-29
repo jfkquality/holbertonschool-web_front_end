@@ -486,6 +486,6 @@ footer {
   display: block;
   padding: 0.5rem 1rem;
 }
-.nav .nav-link a:hover {
+.nav a.nav-link:hover {
   color: var(--nav-item-link-hover);
 }
