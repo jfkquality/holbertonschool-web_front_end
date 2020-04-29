@@ -514,7 +514,7 @@ ul.footer {
   text-align: right;
 }
 .row {
-  grid-row: 1/1;
+  grid-row: 1/2;
   content: none;
   display: table;
   float: none;
