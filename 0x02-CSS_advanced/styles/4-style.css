@@ -17,7 +17,7 @@ body {
 }
 .section-header {
     font-family: var(--font-family-title);
-    font-weight: var(--font-weight-bold);
+    /* font-weight: var(--font-weight-bold); */
 }
 a {
     color: var(--text-color);
