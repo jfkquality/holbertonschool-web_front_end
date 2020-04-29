@@ -513,8 +513,7 @@ ul.row {
 ul.footer {
   text-align: right;
 }
-.row {
-  grid-row: 1 / span 2;
+.row::after {
   content: none;
   display: table;
   float: none;
