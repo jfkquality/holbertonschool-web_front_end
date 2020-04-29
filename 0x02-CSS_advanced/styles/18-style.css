@@ -394,7 +394,7 @@ html {
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 4%;  /* 4% of the root/parent element */
+  --nav-item-letter-spacing: .04rem;  /* 4% of the root/parent element */
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0;
   --nav-item-link-hover: var(--color-primary);
