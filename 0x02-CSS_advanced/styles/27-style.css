@@ -582,7 +582,7 @@ ul.row {
   color: var(--color-primary);
 }
 .section-hero {
-  background-size: 90rem;
+  background-size: 90rem auto;
 }
 .section-hero .section-title {
   margin-bottom: +5rem;
