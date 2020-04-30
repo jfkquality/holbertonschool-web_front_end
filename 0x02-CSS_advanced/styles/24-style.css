@@ -532,10 +532,10 @@ ul.row {
 .social-link > svg {
   fill: var(--text-color);
 }
-.card-services.card-title {
+.card-services .card-title {
   margin: 0;
 }
-.card-services {
+.card-services a {
   display: block;
   padding: 2rem;
   background: var(--color-light-grey);
