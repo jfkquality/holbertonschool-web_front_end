@@ -1,0 +1,13 @@
+/* Basic styleing */
+$prime-color: #3D3D3D;
+$bg-color: #6D6D6D;
+body {
+    color: $prime-color;
+    background-color: $bg-color;
+}
+p {
+    color: $prime-color;
+}
+h2 {
+    background-color: $bg-color;
+}
