@@ -552,9 +552,9 @@ ul.row {
     z-index: 2;
 }
 
-.section-hero + .main-article {
+/* .section-hero + .main-article {
     padding: 5rem;
-}
+} */
 
 /* Post
     ============================= */
