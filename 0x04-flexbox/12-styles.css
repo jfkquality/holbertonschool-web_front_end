@@ -567,7 +567,7 @@ header.section-hero + div.main-article {
     width: 100%;
 }
 
-.post-content + .post-aside {
+.post-content ~ .post-aside {
     order: -1;
     min-width: 20%;
 }
