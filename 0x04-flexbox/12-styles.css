@@ -552,7 +552,7 @@ ul.row {
     z-index: 2;
 }
 
-.main-article {
+div + .main-article {
     padding: 5rem;
 }
 
