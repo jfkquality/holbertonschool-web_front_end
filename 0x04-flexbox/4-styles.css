@@ -184,14 +184,14 @@ a:active {
     display: flex;
 }
 ul.row {
-    margin: 1rem;
+    margin: -1rem;
     padding: 0;
     list-style: none;
 }
 
 
 [class*='col-'] {
-    margin: 1rem;
+    margin: -1rem;
 }
 
 .col-1-3 {
