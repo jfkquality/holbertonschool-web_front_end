@@ -552,7 +552,7 @@ ul.row {
     z-index: 2;
 }
 
-header.header-article ~ .main-article {
+header.hero-article ~ .main-article {
     padding: 5rem;
 }
 
