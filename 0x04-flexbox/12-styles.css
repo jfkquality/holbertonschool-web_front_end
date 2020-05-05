@@ -552,7 +552,7 @@ ul.row {
     z-index: 2;
 }
 
-header.section.hero + .main-article {
+header.section-hero + div.main-article {
     padding: 5rem;
 }
 
@@ -567,7 +567,7 @@ header.section.hero + .main-article {
     width: 100%;
 }
 
-.post-aside {
+.post-content + .post-aside {
     order: -1;
     min-width: 20%;
 }
