@@ -552,9 +552,9 @@ ul.row {
     z-index: 2;
 }
 
-/* .section-hero + .main-article {
+.main-article {
     padding: 5rem;
-} */
+}
 
 /* Post
     ============================= */
@@ -567,7 +567,7 @@ ul.row {
     width: 100%;
 }
 
-.post-content + .post-aside {
+.post-aside {
     order: -1;
     min-width: 20%;
 }
