@@ -1,15 +1,18 @@
-.container {
+:root {
     --color-primary: #D73953;
     --color-black:  #090909;
     --color-white: #ffffff;
     --color-grey: #a0a0a0;
     --color-light-grey: #299e5e;
     --color-dark-grey: #353535;
-    display: flex;
+ }
+.container {
+   display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
     height: 100vh;
+    /* width: 70%; */
 }
 div .box {
     display: flex;
@@ -21,7 +24,7 @@ div .box {
 div .box:nth-of-type(1) {
     background-color: var(--color-primary);
     font-size: 1rem;
-    flex-grow: 1;
+    flex-grow: 1.5;
 }
 div .box:nth-of-type(2) {
     background-color: var(--color-black);
@@ -31,7 +34,7 @@ div .box:nth-of-type(2) {
 }
 div .box:nth-of-type(3) {
     background-color: var(--color-grey);
-    flex-grow: 3;
+    flex-grow: 2.5;
     font-size: 8rem;
     height: 15rem;
 }
@@ -43,6 +46,6 @@ div .box:nth-of-type(4) {
 }
 div .box:nth-of-type(5) {
     background-color: var(--color-dark-grey);
-    flex-grow: 1;
+    flex-grow: 1.5;
     font-size: 1rem;
 }
