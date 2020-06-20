@@ -29,7 +29,7 @@
                 <a data-toggle="tab" href="#discography">Discography</a>
             </li>
         </ul>
-        <div class="tab-content col-lg bg-light p-3">
+        <div id="" class="tab-content col-lg bg-light p-3">
 
             <div id="intro" class="tab-pane fade in active col-lg bg-light p-3">
                 <p>
@@ -45,15 +45,15 @@
                 </p>
             </div>
 
-            <div id="discography" class="tab-pane fade col-lg bg-light p-3">
-                <ul class="list-group card">
-                    <li class="list-group-item card-header" id="headingOne">
-                        <a class="btn btn-link" data-toggle="collapse" data-target="collapseOne" aria-expanded="true"
+            <div id="discography" class="card tab-pane fade in col-lg bg-light p-3">
+                <ul id="accordion">
+                    <li class="list-group-item card card-header" id="headingOne">
+                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                             aria-controls="collapseOne">
                             Bob Dylan <em>(1962)</em>
                         </a>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingeOne"
-                            data-parent="#discography">
+                        <div id="collapseOne" class="collapse " aria-labelledby="headingeOne"
+                            data-parent="#accordion">
                             <p class="card-body">
                                 Bob Dylan is the debut studio album by American singer-songwriter Bob Dylan, released on
                                 March 19, 1962 by Columbia Records. Produced by Columbia's legendary talent scout John
@@ -63,11 +63,13 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">
-                        <a class="dropdown-toggle" data-toggle="pill" href="#">The Freewheelin' Bob Dylan
-                            <em>(1963)</em></a>
-                        <div class="col-lg bg-light p-3">
-                            <p>
+                    <li class="list-group-item card card-header">
+                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            The Freewheelin' Bob Dylan <em>(1963)</em>
+                        </a>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <p class="card-body">
                                 The Freewheelin' Bob Dylan is the second studio album by American singer-songwriter Bob
                                 Dylan, released on May 27, 1963 by Columbia Records. Whereas his self-titled debut album
                                 Bob Dylan had contained only two original songs, Freewheelin' represented the beginning
@@ -82,10 +84,13 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">
-                        <a data-toggle="pill">The Times They Are a-Changin' <em>(1964)</em></a>
-                        <div class="col-lg bg-light p-3">
-                            <p>
+                    <li class="list-group-item card card-header">
+                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            The Times They Are a-Changin' <em>(1964)</em>
+                        </a>
+                        <div id="collapseThree" class="collapse" aria-label="headingThree" data-parent="#accordion">
+                            <p class="card-body">
                                 The Times They Are a-Changin' is the third studio album by American singer-songwriter
                                 Bob Dylan, released on January 13, 1964 by Columbia Records. Whereas his previous albums
                                 Bob Dylan and The Freewheelin' Bob Dylan consisted of original material among cover
@@ -98,10 +103,13 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">
-                        <a data-toggle="pill">Another Side of Bob Dylan <em>(1964)</em></a>
-                        <div class="col-lg bg-light p-3">
-                            <p>
+                    <li class="list-group-item card card-header">
+                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            Another Side of Bob Dylan <em>(1964)</em>
+                        </a>
+                        <div id="collapseFour" class="collapse" aria-label="headingFour" data-parent="#accordion">
+                            <p class="card-body">
                                 Another Side of Bob Dylan is the fourth studio album by American singer and songwriter
                                 Bob Dylan, released on August 8, 1964 by Columbia Records.
                             </p>
