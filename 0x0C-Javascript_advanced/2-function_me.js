@@ -1,4 +1,5 @@
 function welcomeMessage(fullname) {
+    a = 100;
     alert('Welcome' + " " + fullname);
 }
 let guillaume = function() {
