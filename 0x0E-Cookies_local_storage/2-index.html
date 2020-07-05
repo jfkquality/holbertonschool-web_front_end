@@ -35,12 +35,10 @@
                 document.cookie = "firstname=" + fname + expires;
                 let mail = document.getElementById("email").value;
                 document.cookie = "email=" + mail + expires;
-                
             }
 
             function showCookies() {
                 let cookies = document.cookie;
-
                 let para = document.createElement("p");
                 para.innerHTML = "Cookies: " + cookies;
                 document.body.appendChild(para);
@@ -48,10 +46,10 @@
                 para = document.createElement("p");
                 para.innerHTML = "Email: " + getCookie("email") + " - Firstname: " + getCookie("firstname");
                 document.body.appendChild(para);
-
             }
-
             function getCookie(name) {
+                // decodedCookie is from Gary. Keep for decode function info
+                // let decodedCookie = decodeURIComponent(document.cookie);
                 let b = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
                 return b ? b.pop() : '';
             }
