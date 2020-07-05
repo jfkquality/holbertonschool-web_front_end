@@ -7,29 +7,17 @@
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' none"> -->
     <link rel="icon" type="image/png" href="favicon.ico">
     <title></title>
-</head>
-
-<body>
-    <!-- <button onclick="showForm()">Show/Hide Form</button> -->
-    <div id="loginForm">
-        <h2>Login to the website</h2>
-        <input type="text" id="firstname" placeholder="Firstname">
-        <input type="text" id="email" placeholder="Email">
-        <button onclick="setCookies()">Log me in</button>
-    </div>
 
     <script>
         window.onload = function () {
-            button1 = document.getElementsByTagName("button")[0];
+            let button1 = document.getElementsByTagName("button")[0];
             button1.style.backgroundColor = "white";
             button1.style.borderRadius = "5px";
             button1.style.borderStyle = "solid";
             button1.style.boxShadow = "0 1px #888888";
             showWelcomeMessageOrForm();
-            // deleteCookiesAndShowForm();
         }
         function setExpiry(days) {
-            // if (!days) {days = 1;}
             let expDate = new Date();
             const oneDay = 24 * 60 * 60 * 1000;
             expDate.setTime(expDate.getTime() + (days * oneDay));
@@ -41,35 +29,23 @@
             document.cookie = "firstname=" + fname + setExpiry(10);
             let mail = document.getElementById("email").value;
             document.cookie = "email=" + mail + setExpiry(10);
+            let welcome = document.getElementById("welcome");
+            if (welcome === null) 
+                ; // Do nothing             
+            else
+                welcome.remove();
             showWelcomeMessageOrForm();
-        }
-        function showCookies() {
-            let cookies = document.cookie;
-
-            let para = document.createElement("p");
-            para.innerHTML = "Cookies: " + cookies;
-            document.body.appendChild(para);
-
-            para = document.createElement("p");
-            para.innerHTML = "Email: " + getCookie("email") + " - Firstname: " + getCookie("firstname");
-            document.body.appendChild(para);
         }
         function getCookie(name) {
             let b = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
             return b ? b.pop() : '';   // or b[2] if yes
         }
         function showForm() {
-            // let welcome = document.getElementById("welcome");
-            // if (welcome === null) 
-            //     ; // Do nothing             
-            // else
-            //     welcome.style.display = "none";
-            
-            loginForm = document.getElementById("loginForm");
+            let loginForm = document.getElementById("loginForm");
             loginForm.style.display = "block";
         }
         function hideForm() {
-            x = document.getElementById("loginForm");
+            let x = document.getElementById("loginForm");
             x.style.display = "none";
         }
         function deleteCookiesAndShowForm() {
@@ -78,7 +54,7 @@
             let mail = document.getElementById("email").value;
             document.cookie = "email=" + "" + setExpiry(-1);
             let welcome2 = document.getElementById("welcome");
-            welcome2.style.display = "none";
+                welcome2.style.display = "none";
             showForm();
         }
         function showWelcomeMessageOrForm() {
@@ -92,7 +68,6 @@
                 head1.style.display = "inline-block";
                 let node = document.createTextNode("Welcome: " + getCookie("firstname"));
                 head1.appendChild(node);
-                // head1.innerHTML = "Welcome: " + getCookie("firstname");
 
                 let a = document.createElement('a');
                 let link = document.createTextNode("(logout)");
@@ -110,6 +85,18 @@
             }
         }
     </script>
+
+</head>
+
+<body>
+    <!-- <button onclick="showForm()">Show/Hide Form</button> -->
+    <div id="loginForm">
+        <h2>Login to the website</h2>
+        <input type="text" id="firstname" placeholder="Firstname">
+        <input type="text" id="email" placeholder="Email">
+        <button onclick="setCookies()">Log me in</button>
+    </div>
+
 </body>
 
 </html>
