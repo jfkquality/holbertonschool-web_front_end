@@ -37,9 +37,6 @@
             document.cookie = "firstname=" + fname + setExpiry(10);
             let mail = document.getElementById("email").value;
             document.cookie = "email=" + mail + setExpiry(10);
-            let welcome = document.getElementById("welcome");
-            if (welcome !== null)
-                welcome.remove();
             showWelcomeMessageOrForm();
         }
         function getCookie(name) {
@@ -63,8 +60,8 @@
             mail.value = "";
             mail.innerHTML = mail.value;
             document.cookie = "email=" + mail + setExpiry(-1);
-            let welcome2 = document.getElementById("welcome");
-            welcome2.style.display = "none";
+            let welcome = document.getElementById("welcome");
+            welcome.remove();
             showForm();
         }
         function showWelcomeMessageOrForm() {
