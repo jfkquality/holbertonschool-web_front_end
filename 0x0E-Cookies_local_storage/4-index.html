@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2.2.1/src/js.cookie.min.js"></script>
+</head>
+
+<body>
+    <!-- <button onclick="showForm()">Show/Hide Form</button> -->
+    <div id="loginForm">
+        <h2>Login to the website</h2>
+        <input type="text" id="firstname" placeholder="Firstname">
+        <input type="text" id="email" placeholder="Email">
+        <button onclick="setCookies()">Log me in</button>
+    </div>
+
+    <script>
+        window.onload = function () {
+            let button1 = document.getElementsByTagName("button")[0];
+            button1.style.backgroundColor = "white";
+            button1.style.borderRadius = "5px";
+            button1.style.borderStyle = "solid";
+            button1.style.boxShadow = "0 1px #888888";
+            showWelcomeMessageOrForm();
+        }
+        function setExpiry(days) {
+            let expDate = new Date();
+            const oneDay = 24 * 60 * 60 * 1000;
+            expDate.setTime(expDate.getTime() + (days * oneDay));
+            let expires = "; expires=" + expDate.toGMTString();
+            return expires;
+        }
+        function setCookies() {
+            expiry = setExpiry(10);
+            let fname = document.getElementById("firstname").value;
+            Cookies.set("firstname", fname, {expires: 10});
+            let mail = document.getElementById("email").value;
+            Cookies.set("email", mail, {expires: 10});
+            showWelcomeMessageOrForm();
+        }
+        function showForm() {
+            let loginForm = document.getElementById("loginForm");
+            loginForm.style.display = "block";
+        }
+        function hideForm() {
+            let x = document.getElementById("loginForm");
+            x.style.display = "none";
+        }
+        function deleteCookiesAndShowForm() {
+            Cookies.remove("firstname");
+            Cookies.remove("email");
+            let fname = document.getElementById("firstname");
+            fname.value = "";
+            fname.innerHTML = fname.value;
+            let mail = document.getElementById("email");
+            mail.value = "";
+            mail.innerHTML = mail.value;
+            let welcome = document.getElementById("welcome");
+            welcome.remove();
+            showForm();
+        }
+        function showWelcomeMessageOrForm() {
+            hideForm();
+
+            /* Logged in = both cookies? Assume yes */
+            if (Cookies.get("firstname") && Cookies.get("email")) {
+                /* Show Welcome msg and logout link */
+                let head1 = document.createElement("h1");
+                head1.id = "welcome";
+                head1.style.display = "inline-block";
+                let node = document.createTextNode("Welcome: " + Cookies.get("firstname"));
+                head1.appendChild(node);
+
+                let a = document.createElement('a');
+                let link = document.createTextNode("(logout)");
+                a.appendChild(link);
+                a.title = ("This is the link title");
+                a.href = "javascript:deleteCookiesAndShowForm()";
+                a.style.fontWeight = "normal";
+                a.style.fontStyle = "italic";
+                a.style.margin = "0 0 0 10px";
+
+                head1.appendChild(a);
+                document.body.appendChild(head1);
+            }
+            else {
+                showForm();
+            }
+        }
+    </script>
+</body>
+
+</html>
