@@ -11,11 +11,24 @@
     <script type="application/javascript">
         let availableItems = ["Shampoo", "Soap", "Sponge", "Water"];
         if (typeof (Storage) !== "undefined") {
-            createStore();
-            displayCart();
+            // createStore();
+            // displayCart();
+            getCartFromStorage();
         }
         else {
             alert("Sorry, your browser does not support Web storage. Try again with a better one");
+        }
+        function getCartFromStorage() {
+            if (sessionStorage.length > 0) {
+                let cart, cartItem;
+                for (let i = 0; i < sessionStorage.length; i++) {
+                    itemKey = sessionStorage.key(i);
+                    // cart += JSON.stringify(cartItem)
+                    cart = sessionStorage.getItem(cartItem);
+                    alert(cart);
+                }
+                // alert(JSON.stringify.sessionStorage());
+            }
         }
         function addItemToCart(item) {
             alert(item);
