@@ -18,20 +18,20 @@
 </head>
 
 <body class="bg-dark">
-    <div class="col-lg bg-light p-3">
+    <div class="container-lg bg-light p-3">
         <h1 class="mt-4 mb-4">Bob Dylan</h1>
 
-        <ul class="nav nav-tabs">
-            <li class="active">
-                <a data-toggle="tab" href="#intro">Introduction</a>
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="active nav-item">
+                <a class="nav-link" data-toggle="tab" href="#intro">Introduction</a>
             </li>
-            <li>
-                <a data-toggle="tab" href="#discography">Discography</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#discography">Discography</a>
             </li>
         </ul>
         <div id="" class="tab-content col-lg bg-light p-3">
 
-            <div id="intro" class="tab-pane fade in active col-lg bg-light p-3">
+            <div id="intro" class="tab-pane fade in active col-lg bg-light p-3" role="tabpanel">
                 <p>
                     Bob Dylan (born Robert Allen Zimmerman; May 24, 1941) is an American singer-songwriter, author, and
                     visual artist who has been a major figure in popular culture for more than fifty years.
@@ -45,10 +45,10 @@
                 </p>
             </div>
 
-            <div id="discography" class="card tab-pane fade in col-lg bg-light p-3">
-                <ul id="accordion">
-                    <li class="list-group-item card card-header" id="headingOne">
-                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+            <div id="discography" class="card tab-pane fade in col-lg bg-light p-3" role="tabpanel">
+                <ul id="accordion" role="tablist">
+                    <li class="list-group-item card card-header nav-item" id="headingOne">
+                        <a class="text-left btn btn-link nav-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                             aria-controls="collapseOne">
                             Bob Dylan <em>(1962)</em>
                         </a>
@@ -63,8 +63,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item card card-header">
-                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                    <li class="list-group-item card card-header nav-item">
+                        <a class="text-left btn btn-link nav-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                             aria-controls="collapseTwo">
                             The Freewheelin' Bob Dylan <em>(1963)</em>
                         </a>
@@ -84,8 +84,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item card card-header">
-                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                    <li class="list-group-item card card-header nav-item">
+                        <a class="text-left btn btn-link nav-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                             aria-controls="collapseThree">
                             The Times They Are a-Changin' <em>(1964)</em>
                         </a>
@@ -103,8 +103,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item card card-header">
-                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                    <li class="list-group-item card card-header nav-item">
+                        <a class="text-left btn btn-link collapsed nav-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
                             aria-controls="collapseFour">
                             Another Side of Bob Dylan <em>(1964)</em>
                         </a>
